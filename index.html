@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="GDG Casablanca's offecial website">
+  <meta name="keywords" content="GDG, GDGCasablanca, WTM, WTMCasablanca, Community, Dev, Google Developers">
+  <meta name="robots" content="index, nofollow">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>GDG Casablanca</title>
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1A73E8">
+  <link rel="icon" sizes="192x192" href="./assets/images/icons/icon-192x192.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Google Sans', Roboto, 'Helvetica Neue', sans-serif;
+    }
+    .container {
+      max-width: 100%;
+      width: 980px;
+      margin: auto;
+      padding: 0 1rem;
+    }
+  </style>
+  <link rel="stylesheet" href="./css/main.css">
+
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+  </script>
+</head>
+<body>
+  
+  <nav class="nav">
+    <div class="container">
+      <a href="#!" class="logo logo-gdg">
+        <img src="./assets/images/logo-gdg.svg" alt="GDG Casablanca">
+      </a>
+
+      <div class="nav-links">
+        <a href="#!">Home</a>
+        <a href="#events">Events</a>
+        <!-- <a href="#!">Team</a>
+        <a href="#!">About</a>
+        <a href="#!">Contact</a> -->
+      </div>
+
+      <a href="https://wtm.gdgcasablanca.com" class="logo logo-wtm">
+        <img src="./assets/images/logo-wtm.svg" alt="WTM Casablanca. Connect. Create. Celebrate.">
+      </a>
+    </div>
+  </nav>
+
+  <header>
+    <section class="section hero">
+      <div class="container">
+        <h1 class="heading">Be a hero. Be a <strong class="pColor">GDG</strong>.</h1>
+        <p>Welcome to GDG Casablanca. Google Developer Groups of Casablanca City is for developers who are interested in Google's developer technology, everything from the Android, App Engine, and Google Chrome platforms, to product APIs like the Maps API, YouTube API and Google Calendar API.</p>
+        <p class="hashtags">#GDGJalandhar &nbsp; #WTMJalandhar &nbsp;  #GDG &nbsp;  #WTM</p>
+        <div class="action-btns">
+          <a class="btn" href="https://www.meetup.com/GDGCasablanca/" target="_blank" rel="noopener noreferrer">Check our Meetup page</a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <section class="section section-bg events" id="events">
+    <div class="container">
+      <h2 class="heading">Next <strong class="pColor">Events</strong>.</h2>
+      <div class="event-card">
+        <h3 class="title">DevFest Casablanca '18</h3>
+        <ul class="details">
+          <li><i class="material-icons">calendar_today</i> November 17, 2018</li>
+          <li><i class="material-icons">access_time</i> 9am to 5pm</li>
+          <li><i class="material-icons">pin_drop</i> Coming Soon</li>
+        </ul>
+        <a class="more-link" href="https://www.meetup.com/GDGCasablanca/events/253351924/" target="_blank" rel="noopener noreferrer">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section footer">
+    <div class="container">
+      <h1 class="organizer">GDG Casablanca</h1>
+      <nav class="links">
+        <a href="https://www.meetup.com/GDGCasablanca/" class="link" target="_blank" rel="noopener noreferrer">Meetup</a>
+        <a href="https://www.twitter.com/GDGCasablanca/" class="link" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://www.facebook.com/GDGCasa/" class="link" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.linkedin.com/company/GDGCasablanca/" class="link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
