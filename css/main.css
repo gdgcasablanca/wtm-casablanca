@@ -84,20 +84,20 @@ a:hover {
   .nav > .container a:not(:last-child) {
     margin-right: 0.5rem;
   }
-  .nav .logo-gdg {
+  .nav .logo-primary {
     display: flex;
   }
-  .nav .logo-gdg img {
-    height: 20px;
+  .nav .logo-primary img {
+    height: 30px;
     margin-right: 0.8rem;
   }
   @media (min-width: 768px) {
-    .nav .logo-wtm {
+    .nav .logo-secondary {
       margin-left: auto;
     }
   }
-  .nav .logo-wtm img {
-    height: 30px;
+  .nav .logo-secondary img {
+    height: 20px;
   }
 
 .hero .description {
