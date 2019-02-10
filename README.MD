@@ -1,4 +1,4 @@
-# GDG Casablanca
-This is the official website of GDG Casablanca.
+# WTM Casablanca
+This is the official website of **WTM Casablanca**.
 
-Check it out at [gdgcasablanca.com](https://gdgcasablanca.com "GDG Casablanca")
+Check it out at [wtm.gdgcasablanca.com](https://wtm.gdgcasablanca.com "WTM Casablanca")
