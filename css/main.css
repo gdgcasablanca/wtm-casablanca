@@ -145,6 +145,18 @@ a:hover {
     float: right;
   }
 
+.member-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-gap: 2rem;
+}
+.member-cards .member-card {
+  width: 100%;
+}
+.member-cards .member-card .member-card-photo img {
+  width: 100%;
+  border-radius: 300px;
+}
 
 .footer > div {
   display: flex;
