@@ -2,7 +2,7 @@
   --primary-color: #5380bf;
   --primary-color-darker: #35598a;
   --secondary-color: #16b8a2;
-  --secondary-color-darker: #147b6d;
+  --secondary-color-darker: #159e8b;
   --lighter-grey: #F1F3F4;
   --grey: #6C757D;
   --dark-grey: #3C4043;
@@ -11,14 +11,16 @@
   --radius-md: 4px;
   --radius-lg: 8px;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
   transition: color 200ms ease;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 a:hover {
-  color: var(--primary-color-darker);
+  color: var(--secondary-color-darker);
 }
 
 .p-color {
@@ -37,10 +39,10 @@ a:hover {
   border-radius: var(--radius-sm);
   display: inline-block;
   transition: background-color 200ms ease;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 .btn:hover {
-  background-color: var(--primary-color-darker);
+  background-color: var(--secondary-color-darker);
   color: white;
 }
 
@@ -55,7 +57,7 @@ a:hover {
     margin-bottom: 1.2rem;
     color: var(--dark-grey);
     font-size: 2.6rem;
-    font-weight: bold;
+    font-weight: normal;
   }
 
 .nav {
@@ -90,8 +92,11 @@ a:hover {
   .nav a {
     color: var(--grey);
   }
+  .nav a:not(:last-child) {
+    margin-right: 1rem;
+  }
   .nav a:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
   }
   .nav .logo {
     display: inline-flex;
@@ -112,16 +117,16 @@ a:hover {
     display: inline-flex;
   }
 
-.hero .description {
+.section .description {
   width: 60ch;
   max-width: 100%;
   font-size: 1.1rem;
   color: var(--dark-grey);
   line-height: 1.4;
 }
-  .hero .hashtags {
-    color: var(--grey);
-  }
+.hero .hashtags {
+  color: var(--grey);
+}
 
 .event-card {
   display: inline-block;
@@ -157,6 +162,43 @@ a:hover {
     float: right;
   }
 
+.featured-event-card {
+  -webkit-box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+  background-color: #fff;
+  padding: 2rem;
+  display: flex;
+}
+  .featured-event-card .card-hero {
+    width: 59%;
+    margin-right: 3rem;
+  }
+  .featured-event-card .card-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .featured-event-card .details {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: var(--dark-grey);
+    font-size: 1.4rem;
+  }
+  .featured-event-card .details li {
+    display: flex;
+    margin-bottom: 0.6rem;
+    align-items: center;
+  }
+  .featured-event-card .material-icons {
+    font-size: 24px;
+    margin-right: 1rem;
+    color: var(--grey);
+  }
+  .featured-event-card .more-link {
+    margin-top: 1.3rem;
+    display: inline-block;
+  }
 .member-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, 260px);
