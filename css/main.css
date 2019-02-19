@@ -47,7 +47,7 @@ a:hover {
 .section {
   padding: 4rem 0;
 }
-  .section-bg {
+  .section:nth-child(odd) {
     background-color: var(--lighter-grey);
   }
   .section .heading {
@@ -66,24 +66,26 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     padding: 1rem;
   }
   .nav > .container > *:not(:last-child) {
     padding-bottom: 1rem;
   }
   @media (min-width: 768px) {
-    .nav {
+    .header {
       position: sticky;
       top: 0;
     }
     .nav > .container {
       flex-direction: row;
-      align-items: center;
     }
     .nav > .container > *:not(:last-child) {
       padding-bottom: 0;
     }
+  }
+  .nav .nav-links {
+    margin: 0 1rem;
   }
   .nav a {
     color: var(--grey);
@@ -91,15 +93,14 @@ a:hover {
   .nav a:hover {
     color: var(--primary-color);
   }
-  .nav > .container a:not(:last-child) {
-    margin-right: 0.5rem;
+  .nav .logo {
+    display: inline-flex;
   }
   .nav .logo-primary {
     display: flex;
   }
   .nav .logo-primary img {
     height: 30px;
-    margin-right: 0.8rem;
   }
   @media (min-width: 768px) {
     .nav .logo-secondary {
@@ -112,7 +113,7 @@ a:hover {
   }
 
 .hero .description {
-  width: 75ch;
+  width: 60ch;
   max-width: 100%;
   font-size: 1.1rem;
   color: var(--dark-grey);
