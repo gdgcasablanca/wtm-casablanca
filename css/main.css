@@ -59,8 +59,13 @@ a:hover {
   margin: 0;
   margin-bottom: 1.2rem;
   color: var(--dark-grey);
-  font-size: 2.6rem;
+  font-size: 2rem;
   font-weight: normal;
+}
+@media (min-width: 768px) {
+  .section .heading {
+    font-size: 2.6rem;
+  }
 }
 
 .nav {
@@ -74,8 +79,8 @@ a:hover {
   align-items: center;
   padding: 0 1rem;
 }
-.nav > .container > *:not(:last-child) {
-  padding-bottom: 1rem;
+.nav > .container > * {
+  padding-bottom: 12px;
 }
 @media (min-width: 768px) {
   .header {
@@ -86,7 +91,7 @@ a:hover {
     flex-direction: row;
     height: 68px;
   }
-  .nav > .container > *:not(:last-child) {
+  .nav > .container > * {
     padding-bottom: 0;
   }
 }
@@ -96,7 +101,7 @@ a:hover {
 .nav a {
   color: var(--grey);
 }
-.nav a:not(:last-child) {
+.nav-links a:not(:last-child) {
   margin-right: 1rem;
 }
 .nav a:hover {
@@ -104,33 +109,44 @@ a:hover {
 }
 .nav .logo {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav .logo-primary {
   display: flex;
 }
 .nav .logo-primary img {
-  height: 58px;
+  height: 52px;
   margin: 0 -1rem;
+}
+@media (min-width: 768px) {
+  .nav .logo-primary {
+    margin-right: 1rem;
+    height: 58px;
+  }
+}
+.nav .logo-secondary img {
+  height: 20px;
+  display: inline-flex;
 }
 @media (min-width: 768px) {
   .nav .logo-secondary {
     margin-left: auto;
+    height: 24px;
   }
-}
-.nav .logo-secondary {
-  padding: 0.8rem 0 1rem;
-}
-.nav .logo-secondary img {
-  height: 17px;
-  display: inline-flex;
 }
 
 .section .description {
   width: 55ch;
   max-width: 100%;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--dark-grey);
   line-height: 1.4;
+}
+@media (min-width: 768px) {
+  .section .description {
+    font-size: 1.1rem;
+  }
 }
 .hero .hashtags {
   color: var(--grey);
@@ -205,11 +221,20 @@ a:hover {
   display: flex;
   margin-bottom: 0.6rem;
   align-items: center;
+  font-size: 0.9rem;
 }
 .featured-event-card .material-icons {
-  font-size: 24px;
+  font-size: 22px;
   margin-right: 1rem;
   color: var(--grey);
+}
+@media (min-width: 768px) {
+  .featured-event-card .details li {
+    font-size: 1rem;
+  }
+  .featured-event-card .material-icons {
+    font-size: 24px;
+  }
 }
 .featured-event-card .more-link {
   margin-top: 1.3rem;
