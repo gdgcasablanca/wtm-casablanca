@@ -1,145 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="WTM Casablanca's official website" />
+    <meta
+      name="keywords"
+      content="WTM, WTMCasablanca, Women Techmakers, Women Techmakers Casablanca, GDG, GDGCasablanca, Community, Dev, Google Developers"
+    />
+    <meta name="robots" content="index, nofollow" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="WTM Casablanca's official website">
-  <meta name="keywords"
-    content="WTM, WTMCasablanca, Women Techmakers, Women Techmakers Casablanca, GDG, GDGCasablanca, Community, Dev, Google Developers">
-  <meta name="robots" content="index, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WTM Casablanca</title>
 
-  <title>WTM Casablanca</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#5380bf" />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="./assets/images/icons/icon-192x192.png"
+    />
 
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#5380bf">
-  <link rel="icon" sizes="192x192" href="./assets/images/icons/icon-192x192.png">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Google Sans', Roboto, 'Helvetica Neue', sans-serif;
+      }
 
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Google Sans', Roboto, 'Helvetica Neue', sans-serif;
-    }
+      .container {
+        max-width: 100%;
+        width: 980px;
+        margin: auto;
+        padding: 0 1rem;
+      }
+    </style>
 
-    .container {
-      max-width: 100%;
-      width: 980px;
-      margin: auto;
-      padding: 0 1rem;
-    }
-  </style>
-  <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js');
-    }
-  </script>
-</head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="container">
+          <a href="/" class="logo logo-primary">
+            <img src="./assets/images/logo-wtm.svg" alt="WTM Casablanca" />
+          </a>
 
-<body>
+          <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#IWD19">IWD'19</a>
+            <a href="#about">About</a>
+            <!-- <a href="#!">Team</a> -->
+            <a href="#contact">Contact</a>
+          </div>
 
-  <header class="header">
-    <nav class="nav">
-      <div class="container">
-        <a href="/" class="logo logo-primary">
-          <img src="./assets/images/logo-wtm.svg" alt="WTM Casablanca">
-        </a>
-  
-        <div class="nav-links">
-          <a href="#home">Home</a>
-          <a href="#IWD19">IWD'19</a>
-          <a href="#about">About</a>
-          <!-- <a href="#!">Team</a> -->
-          <a href="#contact">Contact</a>
+          <a
+            href="https://gdgcasablanca.com"
+            class="logo logo-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./assets/images/logo-gdg.svg"
+              alt="GDG Casablanca. Be a hero. Be a GDG."
+            />
+          </a>
         </div>
-  
-        <a href="https://gdgcasablanca.com" class="logo logo-secondary" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/images/logo-gdg.svg" alt="GDG Casablanca. Be a hero. Be a GDG.">
-        </a>
-      </div>
-    </nav>
-  </header>
-
-  <section class="section hero" id="home">
-    <div class="container">
-      <h1 class="heading"><strong class="s-color">WTM Casablanca.</strong>
-        <br />Connect. Create. Celebrate.</h1>
-      <p class="description">Google's Women Techmakers program provides visibility, community, and resources for women
-        in technology.</p>
-      <p class="hashtags">#WTMCasablanca &nbsp; #GDGCasablanca &nbsp; #WTM &nbsp; #GDG</p>
-      <div class="action-btns">
-        <a class="btn" href="https://www.meetup.com/GDGCasablanca/" target="_blank" rel="noopener noreferrer">Check
-          our Meetup page</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section events" id="IWD19">
-    <div class="container">
-      <div class="featured-event-card">
-        <div class="card-hero">
-          <img src="https://secure.meetupstatic.com/photos/event/1/7/3/3/highres_469925939.jpeg" alt="WTM 2018">
-        </div>
-        <div class="card-details">
-          <h2 class="heading">International <strong class="s-color">Women's</strong> day (IWD'19)</h2>
-          <ul class="details">
-            <li><i class="material-icons">calendar_today</i> March 9, 2019</li>
-            <li><i class="material-icons">access_time</i> 1pm to 7pm (gmt+1)</li>
-            <li><i class="material-icons">pin_drop</i> Ensam Casablanca</li>
-          </ul>
-          <a class="more-link text-md" href="https://www.meetup.com/GDGCasablanca/events/258883754/" target="_blank"
-            rel="noopener noreferrer">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="about">
-    <div class="container">
-      <h1 class="heading">About <strong class="s-color">WTM</strong> Casablanca</h1>
-      <p class="description"><strong>Women Techmakers</strong> is Google’s brand and global program for women in technology. Women Techmakers provides visibility, community, and resources for women in technology to drive innovation and participation in the field. Women Techmakers events are designed to promote an environment of inclusion for women in technology, as well as celebrate women leading the industry. We want to advance, grow, and celebrate women developers, designers, and technology entrepreneurs.</p>
-      <p class="description"><strong>Women Techmakers</strong> was founded by Googlers in 2012, including Megan Smith, former VP at Google[x] and current Chief Technology Officer of the United States. The program started as a once-a-year event for women in technology to connect and inspire one another, happening the night before Google I/O. In 2013 Women Techmakers became a global brand and program led by Natalie Villalobos, Google’s Women in Technology Advocate. In 2014, Women Techmakers hosted 125 events across 52 countries for International Women's Day, increased the participation of women at Google I/O from 8% in 2013 to 20% in 2014, and much more.</p>
-      <p class="description"><strong>WTM</strong> in integrated into the <strong>GDG community</strong> you can find more information about GDG Casablanca here: 
-        <a href="https://www.meetup.com/GDGCasablanca/" target="_blank" rel="noopener noreferer">https://www.meetup.com/GDGCasablanca/</a>
-      </p>
-    </div>
-  </section>
-
-  <section class="section" id="contact">
-    <div class="container">
-      <h1 class="heading">Contact Us</h1>
-      <p class="description">For partnerships or press, please contact us via our email: <a href="mailto://wtmcasa@gmail.com" target="_blank" rel="noopener noreferer">wtmcasa@gmail.com</a></p>
-    </div>
-  </section>
-
-  <footer class="section footer">
-    <div class="container">
-      <h1 class="organizer">WTM Casablanca</h1>
-      <nav class="links">
-        <a href="https://www.meetup.com/GDGCasablanca/" class="link" target="_blank"
-          rel="noopener noreferrer">Meetup</a>
-        <a href="https://www.twitter.com/WTMCasablanca/" class="link" target="_blank"
-          rel="noopener noreferrer">Twitter</a>
-        <a href="https://www.facebook.com/WTMCasablanca/" class="link" target="_blank"
-          rel="noopener noreferrer">Facebook</a>
-        <a href="https://www.instagram.com/WTMCasablanca/" class="link" target="_blank"
-          rel="noopener noreferrer">Instagram</a>
       </nav>
-    </div>
-  </footer>
-</body>
+    </header>
+
+    <section class="section hero" id="home">
+      <div class="container">
+        <h1 class="heading">
+          <strong class="s-color">WTM Casablanca.</strong> <br />Connect.
+          Create. Celebrate.
+        </h1>
+        <p class="description">
+          Google's Women Techmakers program provides visibility, community, and
+          resources for women in technology.
+        </p>
+        <p class="hashtags">
+          #WTMCasablanca &nbsp; #GDGCasablanca &nbsp; #WTM &nbsp; #GDG
+        </p>
+        <div class="action-btns">
+          <a
+            class="btn"
+            href="https://www.meetup.com/GDGCasablanca/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Check our Meetup page</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="section events" id="IWD19">
+      <div class="container">
+        <div class="featured-event-card">
+          <div class="card-hero">
+            <img
+              src="https://secure.meetupstatic.com/photos/event/1/7/3/3/highres_469925939.jpeg"
+              alt="WTM 2018"
+            />
+          </div>
+          <div class="card-details">
+            <h2 class="heading">
+              International <strong class="s-color">Women's</strong> day
+              (IWD'19)
+            </h2>
+            <ul class="details">
+              <li>
+                <i class="material-icons">calendar_today</i>
+                <span>March 8, 2020</span>
+              </li>
+              <li>
+                <i class="material-icons">access_time</i>
+                <span>9:00 AM to 5:00 PM (gmt+1)</span>
+              </li>
+              <li>
+                <i class="material-icons">pin_drop</i>
+                <span>Emsi Les Orangers, Casablanca</span>
+              </li>
+            </ul>
+            <a
+              class="more-link text-md"
+              href="https://www.meetup.com/GDGCasablanca/events/268661463/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h1 class="heading">
+          About <strong class="s-color">WTM</strong> Casablanca
+        </h1>
+        <p class="description">
+          <strong>Women Techmakers</strong> is Google’s brand and global program
+          for women in technology. Women Techmakers provides visibility,
+          community, and resources for women in technology to drive innovation
+          and participation in the field. Women Techmakers events are designed
+          to promote an environment of inclusion for women in technology, as
+          well as celebrate women leading the industry. We want to advance,
+          grow, and celebrate women developers, designers, and technology
+          entrepreneurs.
+        </p>
+        <p class="description">
+          <strong>Women Techmakers</strong> was founded by Googlers in 2012,
+          including Megan Smith, former VP at Google[x] and current Chief
+          Technology Officer of the United States. The program started as a
+          once-a-year event for women in technology to connect and inspire one
+          another, happening the night before Google I/O. In 2013 Women
+          Techmakers became a global brand and program led by Natalie
+          Villalobos, Google’s Women in Technology Advocate. In 2014, Women
+          Techmakers hosted 125 events across 52 countries for International
+          Women's Day, increased the participation of women at Google I/O from
+          8% in 2013 to 20% in 2014, and much more.
+        </p>
+        <p class="description">
+          <strong>WTM</strong> in integrated into the
+          <strong>GDG community</strong> you can find more information about GDG
+          Casablanca here:
+          <a
+            href="https://www.meetup.com/GDGCasablanca/"
+            target="_blank"
+            rel="noopener noreferer"
+            >https://www.meetup.com/GDGCasablanca/</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h1 class="heading">Contact Us</h1>
+        <p class="description">
+          For partnerships or press, please contact us via our email:
+          <a
+            href="mailto://wtmcasa@gmail.com"
+            target="_blank"
+            rel="noopener noreferer"
+            >wtmcasa@gmail.com</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <footer class="section footer">
+      <div class="container">
+        <h1 class="organizer">WTM Casablanca</h1>
+        <nav class="links">
+          <a
+            href="https://www.meetup.com/GDGCasablanca/"
+            class="link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Meetup</a
+          >
+          <a
+            href="https://www.twitter.com/WTMCasablanca/"
+            class="link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Twitter</a
+          >
+          <a
+            href="https://www.facebook.com/WTMCasablanca/"
+            class="link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+          <a
+            href="https://www.instagram.com/WTMCasablanca/"
+            class="link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
