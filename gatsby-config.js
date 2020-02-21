@@ -21,13 +21,18 @@ module.exports = {
         name: `WTM Casablanca`,
         short_name: `WTM Casa`,
         start_url: `/`,
-        // TODO: change theme colors
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
+        background_color: '#5380bf',
+        theme_color: '#5380bf',
+        display: 'standalone',
         icon: `src/images/wtm-icon.png`,
       },
     },
     `gatsby-plugin-offline`,
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: 'UA-139563322-1',
+    //   },
+    // },
   ],
 }
