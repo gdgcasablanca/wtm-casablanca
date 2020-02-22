@@ -1,8 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 
 import Header from './header/header'
+import Footer from './footer/footer'
+
 import './layout.css'
 
 const Layout = ({ children }) => {
@@ -18,15 +21,18 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+        <link
+          href='https://fonts.googleapis.com/icon?family=Material+Icons'
+          rel='stylesheet'
+        />
+      </Helmet>
+
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className='container'>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href='https://www.gatsbyjs.org'>Gatsby</a>
-        </footer>
-      </div>
+
+      <main>{children}</main>
+
+      <Footer />
     </>
   )
 }
