@@ -1,0 +1,6 @@
+.section {
+  padding: 4rem 0;
+}
+.section:nth-of-type(even) {
+  background-color: var(--lighter-grey);
+}

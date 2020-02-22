@@ -1,0 +1,21 @@
+.heading {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.heading.default {
+  color: var(--dark-grey);
+}
+.heading.primary {
+  color: var(--primary-color);
+}
+.heading.secondary {
+  color: var(--secondary-color);
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 2.6rem;
+  }
+}
