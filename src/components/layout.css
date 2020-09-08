@@ -1,0 +1,137 @@
+:root {
+  --primary-color: #5380bf;
+  --primary-color-darker: #35598a;
+  --secondary-color: #16b8a2;
+  --secondary-color-darker: #159e8b;
+  --lighter-grey: #f1f3f4;
+  --grey: #6c757d;
+  --dark-grey: #3c4043;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Google Sans', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  transition: color 200ms ease;
+  color: var(--secondary-color);
+}
+a:hover {
+  color: var(--secondary-color-darker);
+}
+
+.container {
+  max-width: 100%;
+  width: 980px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  font-weight: normal;
+  font-display: fallback;
+  src: local('Google Sans'), url('../assets/fonts/GoogleSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'Google Sans';
+  font-weight: 800;
+  font-display: fallback;
+  src: local('Google Sans'), url('../assets/fonts/GoogleSans-Bold.ttf');
+}
+
+/*
+.event-card {
+  display: inline-block;
+  max-width: 100%;
+  width: 320px;
+  padding: 1rem 1.3rem;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: var(--radius-lg);
+}
+.event-card .title {
+  margin: 0;
+  margin-bottom: 1.2rem;
+  color: var(--grey);
+  font-weight: 100;
+  font-size: 1.618rem;
+}
+.event-card .details {
+  list-style: none;
+  padding: 0;
+}
+.event-card .details li {
+  font-size: 1rem;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+.event-card .details li .material-icons {
+  font-size: 1rem;
+  margin-right: 6px;
+}
+.event-card .more-link {
+  float: right;
+}
+
+.member-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 260px);
+  grid-gap: 2rem;
+}
+.member-cards .member-card {
+  width: 100%;
+  text-align: center;
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.member-cards .member-card .member-card-body {
+  width: 100%;
+  padding: 1rem;
+}
+.member-cards .member-card .member-card-photo {
+  width: 80%;
+  margin: auto;
+}
+.member-cards .member-card .member-card-photo img {
+  width: 100%;
+  border-radius: 300px;
+  margin-bottom: 0.3rem;
+}
+.member-cards .member-card .member-card-name {
+  color: #404040;
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+.member-cards .member-card .member-card-location {
+  color: #a5a5a5;
+  font-size: 0.9rem;
+}
+.member-cards .member-card .member-card-footer {
+  background-color: #f9f9f9;
+  color: #4c4c4c;
+  font-size: 1.1rem;
+  padding: 24px;
+  border-top: 1px solid var(--lighter-grey);
+}
+
+
+*/

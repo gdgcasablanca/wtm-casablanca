@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "wtm-casablanca",
+    "develop": "wtm-casablanca-dev"
+  }
+}
