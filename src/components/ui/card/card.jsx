@@ -17,12 +17,12 @@ const Card = ({ imgSrc, imgAlt, Hero, title, link, details }) => {
       <div className={styles.cardDetails}>
         <div className={styles.cardTitle}>{title}</div>
         <ul className={styles.details}>
-          {details.map(detail => (
+          {details.map((detail) => (
             <li className={styles.detailsItem}>{detail}</li>
           ))}
         </ul>
         <Link external to={link} classes={styles.moreLink}>
-          Learn More
+          More About The Event
         </Link>
       </div>
     </div>

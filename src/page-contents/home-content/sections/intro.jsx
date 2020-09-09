@@ -21,7 +21,14 @@ const Intro = () => {
       <Text color='grey' size='sm'>
         #WTMCasablanca &nbsp; #GDGCasablanca &nbsp; #WTM &nbsp; #GDG
       </Text>
-      <Button as='a'>Check Our Meetup Page</Button>
+      <Button
+        as='a'
+        href='https://www.meetup.com/GDGCasablanca/'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        Check Our Meetup Page
+      </Button>
     </Section>
   )
 }
