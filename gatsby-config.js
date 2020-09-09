@@ -27,7 +27,15 @@ module.exports = {
         icon: `src/images/wtm-icon.png`,
       },
     },
-    `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
+      },
+    },
+    // `gatsby-plugin-offline`,
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {

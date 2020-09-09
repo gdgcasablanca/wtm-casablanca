@@ -53,10 +53,10 @@
   font-size: 0.9rem;
 }
 
-.featuredEventCard :global(.material-icons) {
+.featuredEventCard :global(.icon) {
   font-size: 22px;
   margin-right: 1rem;
-  color: var(--grey);
+  fill: var(--grey);
 }
 
 .more-link {
@@ -81,7 +81,7 @@
   .detailsItem {
     font-size: 1rem;
   }
-  .featuredEventCard :global(.material-icons) {
+  .featuredEventCard :global(.icon) {
     font-size: 24px;
   }
   .cardHero {

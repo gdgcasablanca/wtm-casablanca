@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
-import Helmet from 'react-helmet'
 
 import Header from './header/header'
 import Footer from './footer/footer'
@@ -21,13 +20,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Helmet>
-        <link
-          href='https://fonts.googleapis.com/icon?family=Material+Icons'
-          rel='stylesheet'
-        />
-      </Helmet>
-
       <Header siteTitle={data.site.siteMetadata.title} />
 
       <main>{children}</main>
