@@ -5,7 +5,7 @@ yarn build
 
 if [ "$TRAVIS_BRANCH" = "develop" ]; then
   firebase use develop
-elif [ "$TRAVIS_BRANCH" = "master" ]; then
+elif [ "$TRAVIS_BRANCH" = "main" ]; then
   firebase use default
 fi
 
